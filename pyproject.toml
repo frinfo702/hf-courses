@@ -1,0 +1,24 @@
+[project]
+name = "hf-courses"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "frinfo702", email = "121755762+frinfo702@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "datasets>=4.1.1",
+    "evaluate>=0.4.6",
+    "ipykernel>=6.30.1",
+    "sentence-transformers>=5.1.1",
+    "sentencepiece>=0.2.1",
+    "transformers>=4.56.2",
+]
+
+[project.scripts]
+hf-courses = "hf_courses:main"
+
+[build-system]
+requires = ["uv_build>=0.8.13,<0.9.0"]
+build-backend = "uv_build"
