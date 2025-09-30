@@ -8,11 +8,18 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "box2d>=2.3.10",
     "datasets>=4.1.1",
     "evaluate>=0.4.6",
+    "gymnasium>=1.2.1",
+    "huggingface-sb3>=3.0",
     "ipykernel>=6.30.1",
+    "pygame==2.5.2",
+    "pyvirtualdisplay>=3.0",
     "sentence-transformers>=5.1.1",
     "sentencepiece>=0.2.1",
+    "stable-baselines3>=2.7.0",
+    "swig>=4.3.1.post0",
     "transformers>=4.56.2",
 ]
 
