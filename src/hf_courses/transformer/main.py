@@ -1,4 +1,3 @@
-# %%
 from transformers import pipeline
 
 classifier = pipeline("sentiment-analysis")
@@ -11,8 +10,6 @@ classifier(
     ]
 )
 
-# %%
-from transformers import pipeline
 
 classifier = pipeline("zero-shot-classification")
 classifier(
@@ -20,14 +17,10 @@ classifier(
     candidate_labels=["education", "politics", "business"],
 )
 
-# %%
-from transformers import pipeline
 
 generator = pipeline("text-generation")
 generator("In this course, we will teach you how to")
 
-# %%
-from transformers import pipeline
 
 generator = pipeline("text-generation", model="distilgpt2")
 generator(
@@ -36,20 +29,14 @@ generator(
     num_return_sequences=2,
 )
 
-# %%
-from transformers import pipeline
 
 unmasker = pipeline("fill-mask")
 unmasker("This course will teach you all about <mask> models.", top_k=2)
 
-# %%
-from transformers import pipeline
 
 ner = pipeline("ner", grouped_entities=True)
 ner("My name is Sylvain and I work at Hugging Face in Brooklyn.")
 
-# %%
-from transformers import pipeline
 
 question_answerer = pipeline("question-answering")
 question_answerer(
@@ -57,8 +44,6 @@ question_answerer(
     context="My name is Sylvain and I work at Hugging Face in Brooklyn",
 )
 
-# %%
-from transformers import pipeline
 
 summarizer = pipeline("summarization")
 summarizer(
@@ -83,9 +68,6 @@ summarizer(
     and a lack of well-educated engineers.
 """
 )
-
-# %%
-from transformers import pipeline
 
 translator = pipeline("translation", model="Helsinki-NLP/opus-mt-fr-en")
 translator("Ce cours est produit par Hugging Face.")
