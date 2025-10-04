@@ -13,6 +13,7 @@ dependencies = [
     "evaluate>=0.4.6",
     "gymnasium>=1.2.1",
     "huggingface-sb3>=3.0",
+    "imageio>=2.37.0",
     "ipykernel>=6.30.1",
     "jax>=0.7.2",
     "jaxlib>=0.7.2",
